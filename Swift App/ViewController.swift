@@ -9,11 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var theLabel: UILabel!
+    
+    @IBOutlet weak var textOne: UITextField!
+    
+    @IBOutlet weak var textTwo: UITextField!
+    
+    @IBAction func theButton(_ sender: AnyObject) {
+        print(textOne.text!)
+        print(textTwo.text!)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.white
     }
 
 
